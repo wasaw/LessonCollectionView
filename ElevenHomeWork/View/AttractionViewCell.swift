@@ -20,6 +20,7 @@ class AttractionViewCell: UICollectionViewCell {
     private let counryNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.textColor = .black
         return label
     }()
     

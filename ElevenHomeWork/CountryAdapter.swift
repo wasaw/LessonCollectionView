@@ -59,7 +59,7 @@ extension CountryAdapter: UICollectionViewDelegate {
 
 extension CountryAdapter: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 110, height: 110)
+        return CGSize(width: 90, height: 110)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

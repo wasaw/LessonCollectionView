@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 19)
         label.numberOfLines = 0
+        label.text = "Выберите страны, которые находятся в Европе."
+        label.textColor = .black
         label.textAlignment = .center
         return label
     }()
@@ -42,9 +44,10 @@ class ViewController: UIViewController {
         annotationLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 15).isActive = true
         annotationLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 15).isActive = true
         annotationLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -15).isActive = true
-        annotationLabel.text = "Выберите страны, которые находятся в Европе."
         configureCollectionView()
         configureButton()
+        
+        view.backgroundColor = .white
     }
 
 //    MARK: - Helpers
@@ -61,6 +64,7 @@ class ViewController: UIViewController {
         collectionView.topAnchor.constraint(equalTo: annotationLabel.bottomAnchor, constant: 10).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: 450).isActive = true
+        collectionView.backgroundColor = .white
     }
     
     private func configureButton() {
